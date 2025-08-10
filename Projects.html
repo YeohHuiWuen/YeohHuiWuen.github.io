@@ -1,103 +1,101 @@
 <!doctype html>
 <html lang="en">
+
 <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="Portfolio.css">
-<style>
+    <style>
+        .container {
+            padding-top: 4%;
+        }
 
-    .container {
-        padding-top: 4%;
-    }
+        .project-left {
+            padding-top: 2%;
+            width: 60%;
+            float: left;
+        }
 
-    .project-left {
-        padding-top: 2%;
-        width: 60%;
-        float: left;
-    }
+        .project-right {
+            width: 35%;
+            float: right;
+            box-shadow: 0px 6px 6px;
+        }
 
-    .project-right {
-        width: 35%;
-        float: right;
-        box-shadow: 0px 6px 6px;
-    }
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
 
-    .row:after {
-        content: "";
-        display: table;
-        clear: both;
-    }
+        .project-right img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
 
-    .project-right img {
-        width: 100%;
-        height: auto;
-        display: block;
-    }
+        hr {
+            border: 1px solid #9AD69C;
+            margin-bottom: 3%;
+        }
 
-    hr {
-        border: 1px solid #9AD69C;
-        margin-bottom: 3%;
-    }
+        .button {
+            display: inline-block;
+            border-radius: 34px;
+            background-color: #F3FCF6;
+            border: 4px solid #D7E7D8;
+            color: #121212;
+            text-align: center;
+            font-size: 1vw;
+            padding: 20px;
+            width: 36%;
+            transition: all 0.5s;
+            cursor: pointer;
+            margin: 14px;
+            vertical-align: middle;
+        }
 
-    .button {
-        display: inline-block;
-        border-radius: 34px;
-        background-color: #F3FCF6;
-        border: 4px solid #D7E7D8;
-        color: #121212;
-        text-align: center;
-        font-size: 1vw;
-        padding: 20px;
-        width: 36%;
-        transition: all 0.5s;
-        cursor: pointer;
-        margin: 14px;
-        vertical-align: middle;
-    }
+        .button.behance:hover {
+            border-color: #0055FF;
+        }
 
-    .button.behance:hover {
-        border-color: #0055FF;
-    }
-    
-    .button.showcase {
-    margin-left: 4%;
-    }
-        
-    .button.showcase:hover {
-        border-color: #F32222;
-    }
+        .button.showcase {
+            margin-left: 4%;
+        }
 
-    .button span {
-        cursor: pointer;
-        display: inline-block;
-        position: relative;
-        transition: 0.5s;
-    }
+        .button.showcase:hover {
+            border-color: #F32222;
+        }
 
-    .button span:after {
-        content: '\00bb';
-        position: absolute;
-        opacity: 0;
-        top: 0;
-        right: -6px;
-        transition: 0.5s;
-    }
+        .button span {
+            cursor: pointer;
+            display: inline-block;
+            position: relative;
+            transition: 0.5s;
+        }
 
-    .button:hover span {
-        padding-right: 24px;
+        .button span:after {
+            content: '\00bb';
+            position: absolute;
+            opacity: 0;
+            top: 0;
+            right: -6px;
+            transition: 0.5s;
+        }
 
-    }
+        .button:hover span {
+            padding-right: 24px;
 
-    .button:hover span:after {
-        opacity: 1;
-        right: 0;
+        }
 
-    }
+        .button:hover span:after {
+            opacity: 1;
+            right: 0;
 
-
-</style>
+        }
+    </style>
 
     <title>Projects - Yeoh Hui Wuen</title>
 </head>
@@ -110,8 +108,9 @@
         <a href="Concept_Design.html">Concept Design</a>
         <a href="Photography.html">Photography</a>
         <a href="Web_Design.html">Web Design</a>
-        <a href="#" style="color: #2195F3;">Projects</a>
         <a href="3D.html">3D</a>
+        <a href="#" style="color: #2195F3;">Projects</a>
+        <a href="Industry_Experience.html">Industry Experience</a>
         <a href="About_Me.html">About Me</a>
     </div>
 
@@ -131,8 +130,10 @@
             <p class="hide" style="font-size: 1.3vw;">All of my past projects are presented in this page.</p>
         </div>
         <div class="column right">
-            <h4 style="font-size: 1.6vw; margin: 0; font-weight: 600;">Portfolio</h4>
-            <h3 style="font-size: 2.2vw;">Yeoh Hui Wuen</h3>
+            <a href="Homepage.html">
+                <h4 style="font-size: 1.6vw; margin: 0; font-weight: 600;">Portfolio</h4>
+                <h3 style="font-size: 2.2vw;">Yeoh Hui Wuen</h3>
+            </a>
         </div>
     </div>
 
@@ -142,7 +143,7 @@
             <div class="project-left">
                 <h4 style="color: #6EBA71; font-size: 2vw; font-weight: 400; margin: 0;">University Final Year Project</h4>
                 <h2 style="color: #4DA953; font-size: 5vw; font-weight: 600; margin: 0;">Nocturne Hillside</h2> <br>
-                <p style="font-size: 1.6vw;">An informative website with illustration  of beetles. <br>
+                <p style="font-size: 1.6vw;">An informative website with illustration of beetles. <br>
                     The purpose of this project is to introduce and educate people about different species of beetles that are not widely known and their fascinating facts. <br></p> <br>
                 <hr>
                 <a href="https://www.behance.net/gallery/188283517/Nocturne-Hillside-Process-Book?tracking_source=search_projects|nocturne+hillside&l=3">
@@ -157,29 +158,29 @@
             </div>
         </div>
     </div>
-<br>
-    
-<footer>
-    <div class="contact">
-    <h3>Contact Me</h3>     
-        <a href="https://www.behance.net/yeohhuiwuen"><img src="icon-image/behance.png"></a>
-        <a href=mailto:“yhuiwuen@gmail.com”><img src="icon-image/envelope.png"></a>
-        <a href="https://www.linkedin.com/in/yeoh-hui-wuen-661a732a8" target="_blank"><img src="icon-image/linkedin.png"></a>
-    </div>     
-    <p>Copyright @Yeoh Hui Wuen. All right reserved.</p>
-</footer>
-    
-    
-<script>
-function openNav() {
-  document.getElementById("mySidenav").style.width = "250px";
-}
+    <br>
 
-function closeNav() {
-  document.getElementById("mySidenav").style.width = "0";
-}
-</script>   
-    
+    <footer>
+        <div class="contact">
+            <h3>Contact Me</h3>
+            <a href="https://www.behance.net/yeohhuiwuen"><img src="icon-image/behance.png"></a>
+            <a href=mailto:“yhuiwuen@gmail.com”><img src="icon-image/envelope.png"></a>
+            <a href="https://www.linkedin.com/in/yeoh-hui-wuen-661a732a8" target="_blank"><img src="icon-image/linkedin.png"></a>
+        </div>
+        <p>Copyright @Yeoh Hui Wuen. All right reserved.</p>
+    </footer>
+
+
+    <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        }
+    </script>
+
 </body>
 
 </html>
