@@ -1,161 +1,161 @@
 <!doctype html>
 <html lang="en">
+
 <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="Portfolio.css">       
-<style>
-
-    /* Start of Image Grid */
-    * {
-        box-sizing: border-box;
-    }
-
-    .row {
-        display: -ms-flexbox;
-        /* IE10 */
-        display: flex;
-        -ms-flex-wrap: wrap;
-        /* IE10 */
-        flex-wrap: wrap;
-        padding: 0 4px;
-    }
-
-    /* Create four equal columns that sits next to each other */
-    .image-column {
-        -ms-flex: 50%;
-        /* IE10 */
-        flex: 50%;
-        max-width: 50%;
-        padding: 0 4px;
-    }
-
-    .image-column img {
-        margin-top: 8px;
-        vertical-align: middle;
-        width: 100%;
-        padding: 2%;
-    }
-    
-    .image-column img:hover {
-border-color: #F32222;
-    }    
-
-    /* End of Image Grid */
-
-    /* Start of Image Modal */
-    #myImg {
-        border-radius: 5px;
-        cursor: pointer;
-        transition: 0.3s;
-    }
-
-    #myImg:hover {
-        opacity: 0.7;
-    }
-
-    /* The Modal (background) */
-    .modal {
-        display: none;
-        /* Hidden by default */
-        position: fixed;
-        /* Stay in place */
-        z-index: 1;
-        /* Sit on top */
-        padding-top: 100px;
-        /* Location of the box */
-        left: 0;
-        top: 0;
-        width: 100%;
-        /* Full width */
-        height: 100%;
-        /* Full height */
-        overflow: auto;
-        /* Enable scroll if needed */
-        background-color: rgb(0, 0, 0);
-        /* Fallback color */
-        background-color: rgba(0, 0, 0, 1);
-        /* Black w/ opacity */
-    }
-
-    /* Modal Content (image) */
-    .modal-content {
-        margin: auto;
-        display: block;
-        max-width: 700px;
-    }
-
-    /* Caption of Modal Image */
-    #caption {
-        margin: auto;
-        display: block;
-        width: 80%;
-        max-width: 700px;
-        font-size: 1.8vw;
-        text-align: center;
-        color: #ccc;
-        padding: 26px;
-        height: 150px;
-    }
-
-    /* Add Animation */
-    .modal-content,
-    #caption {
-        -webkit-animation-name: zoom;
-        -webkit-animation-duration: 0.6s;
-        animation-name: zoom;
-        animation-duration: 0.6s;
-    }
-
-    @-webkit-keyframes zoom {
-        from {
-            -webkit-transform: scale(0)
+    <link rel="stylesheet" href="Portfolio.css">
+    <style>
+        /* Start of Image Grid */
+        * {
+            box-sizing: border-box;
         }
 
-        to {
-            -webkit-transform: scale(1)
+        .row {
+            display: -ms-flexbox;
+            /* IE10 */
+            display: flex;
+            -ms-flex-wrap: wrap;
+            /* IE10 */
+            flex-wrap: wrap;
+            padding: 0 4px;
         }
-    }
 
-    @keyframes zoom {
-        from {
-            transform: scale(0)
+        /* Create four equal columns that sits next to each other */
+        .image-column {
+            -ms-flex: 50%;
+            /* IE10 */
+            flex: 50%;
+            max-width: 50%;
+            padding: 0 4px;
         }
 
-        to {
-            transform: scale(1)
-        }
-    }
-
-    /* The Close Button */
-    .close {
-        position: absolute;
-        top: 15px;
-        right: 35px;
-        color: #f1f1f1;
-        font-size: 40px;
-        font-weight: bold;
-        transition: 0.3s;
-    }
-
-    .close:hover,
-    .close:focus {
-        color: #bbb;
-        text-decoration: none;
-        cursor: pointer;
-    }
-
-    /* 100% Image Width on Smaller Screens */
-    @media only screen and (max-width: 700px) {
-        .modal-content {
+        .image-column img {
+            margin-top: 8px;
+            vertical-align: middle;
             width: 100%;
+            padding: 2%;
         }
-    }
 
-    /* End of Image Modal */
-</style>
+        .image-column img:hover {
+            border-color: #F32222;
+        }
+
+        /* End of Image Grid */
+
+        /* Start of Image Modal */
+        #myImg {
+            border-radius: 5px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        #myImg:hover {
+            opacity: 0.7;
+        }
+
+        /* The Modal (background) */
+        .modal {
+            display: none;
+            /* Hidden by default */
+            position: fixed;
+            /* Stay in place */
+            z-index: 1;
+            /* Sit on top */
+            padding-top: 100px;
+            /* Location of the box */
+            left: 0;
+            top: 0;
+            width: 100%;
+            /* Full width */
+            height: 100%;
+            /* Full height */
+            overflow: auto;
+            /* Enable scroll if needed */
+            background-color: rgb(0, 0, 0);
+            /* Fallback color */
+            background-color: rgba(0, 0, 0, 1);
+            /* Black w/ opacity */
+        }
+
+        /* Modal Content (image) */
+        .modal-content {
+            margin: auto;
+            display: block;
+            max-width: 700px;
+        }
+
+        /* Caption of Modal Image */
+        #caption {
+            margin: auto;
+            display: block;
+            width: 80%;
+            max-width: 700px;
+            font-size: 1.8vw;
+            text-align: center;
+            color: #ccc;
+            padding: 26px;
+            height: 150px;
+        }
+
+        /* Add Animation */
+        .modal-content,
+        #caption {
+            -webkit-animation-name: zoom;
+            -webkit-animation-duration: 0.6s;
+            animation-name: zoom;
+            animation-duration: 0.6s;
+        }
+
+        @-webkit-keyframes zoom {
+            from {
+                -webkit-transform: scale(0)
+            }
+
+            to {
+                -webkit-transform: scale(1)
+            }
+        }
+
+        @keyframes zoom {
+            from {
+                transform: scale(0)
+            }
+
+            to {
+                transform: scale(1)
+            }
+        }
+
+        /* The Close Button */
+        .close {
+            position: absolute;
+            top: 15px;
+            right: 35px;
+            color: #f1f1f1;
+            font-size: 40px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: #bbb;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        /* 100% Image Width on Smaller Screens */
+        @media only screen and (max-width: 700px) {
+            .modal-content {
+                width: 100%;
+            }
+        }
+
+        /* End of Image Modal */
+    </style>
 
     <title>Illustration - Yeoh Hui Wuen</title>
 </head>
@@ -168,8 +168,9 @@ border-color: #F32222;
         <a href="Concept_Design.html">Concept Design</a>
         <a href="Photography.html">Photography</a>
         <a href="Web_Design.html">Web Design</a>
-        <a href="Projects.html">Projects</a>
         <a href="3D.html">3D</a>
+        <a href="Projects.html">Projects</a>
+        <a href="Industry_Experience.html">Industry Experience</a>
         <a href="About_Me.html">About Me</a>
     </div>
 
@@ -187,97 +188,101 @@ border-color: #F32222;
                 <img src="icon-image/information-pamphlet.png" style="width: 36px; opacity: 0.65; margin-top: 0;">
             </div>
             <p class="hide" style="font-size: 1.3vw;">
-            Illustration is always my most favourite subject, I love spending time drawing and study art.<br>
-            There are many topics of illustration I have been learning: <br>
-            ● Body Anatomy <br>
-            ● Illustration software function <br>
-            ● Colour Theory (colour harmony, colour temperature, light and shadow) <br>
-            ● Naturalism art style <br>
-            ● Japanese Anime 2D and 3D art style <br>
-            ● Character / costume concept design <br>
-            ● Perspective, background drawing <br>
+                Illustration is always my most favourite subject, I love spending time drawing and study art.<br>
+                There are many topics of illustration I have been learning: <br>
+                ● Body Anatomy <br>
+                ● Illustration software function <br>
+                ● Colour Theory (colour harmony, colour temperature, light and shadow) <br>
+                ● Naturalism art style <br>
+                ● Japanese Anime 2D and 3D art style <br>
+                ● Character / costume concept design <br>
+                ● Perspective, background drawing <br>
             </p>
         </div>
         <div class="column right">
-            <h4 style="font-size: 1.6vw; margin: 0; font-weight: 600;">Portfolio</h4>
-            <h3 style="font-size: 2.2vw;">Yeoh Hui Wuen</h3>
+            <a href="About_Me.html">
+                <h4 style="font-size: 1.6vw; margin: 0; font-weight: 600;">Portfolio</h4>
+                <h3 style="font-size: 2.2vw;">Yeoh Hui Wuen</h3>
+            </a>
         </div>
     </div>
 
-<div class="content">
-    <div class="container">
-        <div class="row">
-            <div class="image-column">
-                <img class="myImg" src="Illustrations_Image/Serval-Illustration.jpg" alt="Serval Landau from Honkai: Star Rail" style="width:100%">
-                <img class="myImg" src="Illustrations_Image/Rosaria-Illustration.jpg" alt="Rosaria from Genshin Impact" style="width:100%">
-                <img class="myImg" src="Illustrations_Image/Scenery-Practice.jpg" alt="A night scenery practice" style="width:100%">
+    <div class="content">
+        <div class="container">
+            <div class="row">
+                <div class="image-column">
+                    <img class="myImg" src="Illustrations_Image/Serval-Illustration.jpg" alt="Serval Landau from Honkai: Star Rail" style="width:100%">
+                    <img class="myImg" src="Illustrations_Image/Rosaria-Illustration.jpg" alt="Rosaria from Genshin Impact" style="width:100%">
+                    <img class="myImg" src="Illustrations_Image/Vivian-Illustration.jpg" alt="Vivian from Zenless Zone Zero" style="width:100%">
+                    <img class="myImg" src="Illustrations_Image/Scenery-Practice.jpg" alt="A night scenery practice" style="width:100%">
+                </div>
+                <div class="image-column">
+                    <img class="myImg" src="Illustrations_Image/Noelle-Illustration.jpg" alt="Noelle from Genshin Impact" style="width:100%">
+                    <img class="myImg" src="Illustrations_Image/Neon_Universe-Illustration.jpg" alt="Neon Universe from Umamusume" style="width:100%">
+                    <img class="myImg" src="Illustrations_Image/Sky-Practice.jpg" alt="Different Skies Painting Practice" style="width:100%">
+                    <img class="myImg" src="Illustrations_Image/Death.jpg" alt="Trying different style of colouring" style="width:100%">
+                    <img class="myImg" src="Illustrations_Image/Ephemeral%20Peace.jpg" alt="Death is Ephemeral Peace" style="width:100%">
+                </div>
             </div>
-            <div class="image-column">
-                <img class="myImg" src="Illustrations_Image/Noelle-Illustration.jpg" alt="Noelle from Genshin Impact" style="width:100%">
-                <img class="myImg" src="Illustrations_Image/Neon_Universe-Illustration.jpg" alt="Neon Universe from Umamusume" style="width:100%">
-                <img class="myImg" src="Illustrations_Image/Sky-Practice.jpg" alt="Different Skies Painting Practice" style="width:100%">
-                <img class="myImg" src="Illustrations_Image/Death.jpg" alt="Trying different style of colouring" style="width:100%">
-            </div>
-        </div>
 
-        <!-- The Modal -->
-        <div id="myModal" class="modal">
-            <span class="close">&times;</span>
-            <img class="modal-content" id="img01">
-            <div id="caption"></div>
+            <!-- The Modal -->
+            <div id="myModal" class="modal">
+                <span class="close">&times;</span>
+                <img class="modal-content" id="img01">
+                <div id="caption"></div>
+            </div>
         </div>
     </div>
-</div> 
 
-<br>    
-    
-<footer>
-    <div class="contact">
-    <h3>Contact Me</h3>     
-        <a href="https://www.behance.net/yeohhuiwuen"><img src="icon-image/behance.png"></a>
-        <a href=mailto:“yhuiwuen@gmail.com”><img src="icon-image/envelope.png"></a>
-        <a href="https://www.linkedin.com/in/yeoh-hui-wuen-661a732a8" target="_blank"><img src="icon-image/linkedin.png"></a>
-    </div>     
-    <p>Copyright @Yeoh Hui Wuen. All right reserved.</p>
-</footer> 
- 
-<script>
-function openNav() {
-  document.getElementById("mySidenav").style.width = "250px";
-}
+    <br>
 
-function closeNav() {
-  document.getElementById("mySidenav").style.width = "0";
-}
-</script>     
- 
-<script>
-  // Get the modal
-  var modal = document.getElementById("myModal");
-  var modalImg = document.getElementById("img01");
-  var captionText = document.getElementById("caption");
+    <footer>
+        <div class="contact">
+            <h3>Contact Me</h3>
+            <a href="https://www.behance.net/yeohhuiwuen"><img src="icon-image/behance.png"></a>
+            <a href=mailto:“yhuiwuen@gmail.com”><img src="icon-image/envelope.png"></a>
+            <a href="www.linkedin.com/in/yeoh-hui-wuen-661a732a8"><img src="icon-image/linkedin.png"></a>
+        </div>
+        <p>Copyright @Yeoh Hui Wuen. All right reserved.</p>
+    </footer>
 
-  // Get all images with class 'myImg'
-  var images = document.querySelectorAll(".myImg");
+    <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+        }
 
-  // Loop through images and add click listener to each
-  images.forEach(function(img) {
-    img.addEventListener("click", function() {
-      modal.style.display = "block";
-      modalImg.src = this.src;
-      captionText.innerHTML = this.alt;
-    });
-  });
-  
-  // Get the <span> element that closes the modal
-  var span = document.getElementsByClassName("close")[0];
-  
-  // When the user clicks on <span> (x), close the modal
-  span.onclick = function() { 
-    modal.style.display = "none";
-  }
-  </script>    
-    
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        }
+    </script>
+
+    <script>
+        // Get the modal
+        var modal = document.getElementById("myModal");
+        var modalImg = document.getElementById("img01");
+        var captionText = document.getElementById("caption");
+
+        // Get all images with class 'myImg'
+        var images = document.querySelectorAll(".myImg");
+
+        // Loop through images and add click listener to each
+        images.forEach(function(img) {
+            img.addEventListener("click", function() {
+                modal.style.display = "block";
+                modalImg.src = this.src;
+                captionText.innerHTML = this.alt;
+            });
+        });
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function() {
+            modal.style.display = "none";
+        }
+    </script>
+
 </body>
 
 </html>
